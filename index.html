@@ -1,87 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="html, course, css, tags"/>
-        <meta name="description" content="Это базовый курс по HTML" />
-        <title>My CV</title>
-    </head>
+<html lang="en">
 
-    <body>
-        <p><img src="My__photo.jpg" alt="My_Photo" width="150px"></p>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-       <h1>Popov Yurii</h1>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header__inner-box">
+                <div class="header__photo"><img class="photo" src="my__photo.jpg" alt="Photo"></div>
 
-        <p>Nice to meet you. Have a nice day</p>
+                <div class="header__about">
+                    <h1 class="about__title">Popov Yurii</h1>
 
-       <p>Hello.My name is Yurii. I was born in 1988.I'm from Ukraine and live in <em>Kharkov</em>. <strong>I don't work now.</strong> I'm IT specialist. Thanks for all. Goodbye</p>
-
-       <div class="link">
-            <a href="https://www.twitch.tv" alt="Twitch" target="_blank">Twitch</a> |
-            <a href="https://www.youtube.com" alt="Youtube" target="_blank">Youtube</a> |
-            <a href="https://rozetka.com.ua/" alt="" target="_blank">Rozetka</a>
-       </div>
-
-       <div class="hobbies">
-        <p>My hobbies</p>
-        <uo>
-            <li>Walks</li>
-            <li>Fixing</li>
-            <li>Read books</li>
-            <li>Cycling</li>
-            <li>Play games</li>
-        </uo>
-       </div>
-       <div class="experience">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name of company</th>
-                    <th>Position</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lica</td>
-                    <td>IT specialist</td>
-                    <td>2007-2011</td>
-                </tr>
-                <tr>
-                    <td>Government office</td>
-                    <td>Main specialist</td>
-                    <td>2011-2021</td>
-                </tr>
-            </tbody>
-        </table>
-        
-       </div>
-
-       <div class="contacts">
-        <div class="inner__form">
-            <p class="contacts__head">Contact with me</p>
-            <form action="">
-                <div class="contacts-text">
-                    <label for="inner_text">Your name:</label>
-                    <input type="text" id="inner_text" placeholder="Write name">
+                    <p class="about__text">Hello.My name is Yurii. I was born in 1988. I'm from Ukraine and live in
+                        <em>Kharkov</em>. I'm IT specialist.
+                    </p>
                 </div>
-                <div class="contacts-email">
-                    <label for="inner_email">Your email:</label>
-                    <input type="text" id="inner_email" placeholder="Write email">
-                </div>
-                <div class="contacts-area">
-                    <label for="inner_area">Your message:</label><br>
-                    <textarea id="inner_area" cols="30" rows="10" placeholder="Write message">
+                <div class="header__links">
+                    <a class="links-info" href="tel:+380633610302" alt="tel">+380633610302</a>
+                    <a class="links-info" href="mailto:lica78@ukr.net" alt="Email">lica78@ukr.net</a>
+                    <a class="links-info" href="https://www.linkedin.com/in/yurii-popov-79b026226/" alt=""
+                        target="_blank">linkedin.com</a>
 
-                    </textarea>
                 </div>
+            </div>
 
-                <div class="contacts-submit">
-                    <input type="submit" id="inner_submit" value="Send">
-                </div>
-            </form>
         </div>
-       </div>
-    </body> 
+    </div>
+
+    <div class="middle_top">
+        <div class="cotainer">
+            <div class="middle__hobbies">
+                <div class="middle__box">
+                    <ol class="middle__list">
+                        <p class="middle__text">My hobbies</p>
+                        <li class="middle__list-item">Walks</li>
+                        <li class="middle__list-item">Fixing</li>
+                        <li class="middle__list-item">Read books</li>
+                        <li class="middle__list-item">Cycling</li>
+                        <li class="middle__list-item">Play games</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="container">
+
+            <div class="middle__experience">
+                <table class="middle__table">
+                    <thead class="middle__table-thead">
+                        <tr class="middle__table-row">
+                            <th class="middle__table-th">Name of company</th>
+                            <th class="middle__table-th">Position</th>
+                            <th class="middle__table-th">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody class="middle__table-tbody">
+                        <tr>
+                            <td class="middle__table-data">Lica</td>
+                            <td class="middle__table-data">IT specialist</td>
+                            <td class="middle__table-data">2007-2011</td>
+                        </tr>
+                        <tr>
+                            <td class="middle__table-data">Government office</td>
+                            <td class="middle__table-data">Main specialist</td>
+                            <td class="middle__table-data">2011-2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <p class="contacts__head">Contact with me:</p>
+
+            <form class="form-submit">
+                <div class="contacts__form">
+                    <div class="group__form">
+                        <div class="contacts-text">
+                            <label class="inner_text" for="inner_text">Your name:</label>
+                            <input class="contact-text" type="text" id="inner_text" placeholder="Write name">
+                        </div>
+                        <div class="contacts-email">
+                            <label class="inner_email" for="inner_email">Your email:</label>
+                            <input class="contact-email" type="text" id="inner_email" placeholder="Write email">
+                        </div>
+                    </div>
+                    <div class="contacts-area">
+                        <label class="inner_area" for="inner_area">Your message:</label><br>
+                        <textarea class="contact-area" id="inner_area" cols="30" rows="10"
+                            placeholder="Write a message"></textarea>
+                    </div>
+                </div>
+                    <div class="contacts-submit">
+                        <input class="contact-submit" type="submit" id="inner_submit" value="send">
+                    </div>
+                
+            </form>
+
+        </div>
+    </div>
+</body>
+
 </html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;/*меняем чтоб не чего не вылазило и контейнера*/
+}
+
+/* Tags */
+a{
+    text-decoration: none;/*убираем у ссылок подчёркивание*/
+    color: inherit; /*наследуем у бади*/
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0; /*убираем отступы*/
+}
+
+ul,
+ol{
+    margin: 0px;
+    padding: 0px;
+    list-style: none
+}
+
+.container{ /*чтоб не разбежались компоненты*/
+    max-width: 1070px; /*Задаём размер разметки страницы*/
+    padding: 0 15px;/* Отступы слева и справа */
+    margin: 0 auto; /*центруем содержимое контейнера*/
+
+}
+
+body{
+    font-family: 'Crimson Text',sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    
+}
+
+.header{
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+   
+}
+
+.header__inner-box{
+    display: flex;
+    align-items:center;
+    
+}
+
+.photo{
+    width: 220px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.header__photo{
+    flex-basis: calc(1200px * 18 / 100);
+   
+}
+
+.header__about{
+    flex-basis: calc(1200px * 50/ 100);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header__about{
+    
+}
+
+.about__text{
+    
+}
+
+.header__links{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-basis: calc(1200px * 18/ 100);
+   
+}
+
+.links-info{
+    
+    margin: 15px 0;
+    text-align: center;
+    width: 150px;
+    color:rgb(47, 141, 175);
+   
+    
+}
+
+.links-info:hover{
+    color: black;
+    /* border: 1px solid #8a8a9f; */
+    border-radius: 6px;
+    transition: all,0.3;
+    background-color: rgba(86, 98, 92, 0.504)
+
+}
+
+.middle_top{
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    
+        
+}
+
+.middle__hobbies{
+    padding-bottom: 15px;
+}
+
+.middle__box{
+    width: 100;
+}
+
+.middle__list{
+    text-align: center;
+    list-style: none;
+}
+.middle__list-item:hover{
+    border-radius: 6px;
+    transition: all,0.3;
+    background-color: rgba(86, 98, 92, 0.504)
+
+}
+
+.middle{
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.middle__experience{
+    
+}
+
+
+.middle__table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.middle__table-th, .middle__table-data {
+    border: 1px solid #000;
+}
+
+.contacts{
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contacts__head{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contacts__form{
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.contacts-text{
+    text-decoration: none;
+    border: none;
+    
+}
+.contacts__head{
+    
+}
+
+.inner__form{
+
+}
+
+.contacts-text{
+
+}
+
+.group__form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-text,
+.contact-email{
+    padding: 3px 15px 3px 5px;
+    width: 50%;
+    border: none; /*убераем поля*/
+    border-bottom: 1px solid #000000; /*Линия по низу*/
+    background-color: transparent;/* бекгроун прозрачный */
+    outline: none; /* убрать линии вокруг*/
+    transition: 0.3s; /* плавность смены*/
+    margin-bottom: 20px;
+   
+}
+
+.contacts-area{
+    
+    flex-basis: calc(1100px - 500px )
+}
+
+
+.inner_area{
+padding-left: 10px;
+}
+
+.contact-area{
+    padding: 3px 0 0 15px;
+    border: none; /*убераем поля*/
+    width: 100%;
+    outline: none; /* убрать линии вокруг*/
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgb(67, 63, 63); /*опустить по y и разміть 16 и цвет*/
+    
+}
+
+
+.contact-text:focus{
+    
+    
+}
+
+.contact-submit{
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #f0f8ff;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-submit:hover{
+    transition: all,0.3;
+    background-color: rgba(86, 98, 92, 0.504);
+    border: 1px solid rgb(143, 140, 140);
+}
